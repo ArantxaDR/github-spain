@@ -1,9 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+  --main-color:#537fff;
+  --primary-color:var(#4ea5e0);
+  --secondary-color:var(#7a3adf);
+  --terciary-color:var(#d500ff);
+  --border-radius:.2rem;
+}
+
+
+/**Estilos generales**/
+
 *{
-	padding: 0;
-  margin: 0;
+  margin:0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins, sans-serif';
-  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: linear-gradient(to left bottom , #4ea5e0 0, #7a3adf 50%,#d500ff 100%);
+}
+
+p{
+  font-size: 1.1rem;
+}
+a{
   text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+h1,h2,h3{
+  font-family: "Kalam", sans-serif;
+}
+h1{
+  font-size: 4em;
+}
+h2{
+  font-size: 2.5rem;
+}
+h3{
+  font-size: 2em;
+}
+
+/**Header*/
+
+header, section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  color: #fff;
+}
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-title{
+  margin-bottom: 50px;
+}
+.content{
+  position: relative;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .image{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.content .image img{
+  z-index:111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content .text-box{
+  z-index: 222;
+  background: var(--main-color  0.2);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid var(--main-color) ;
+  transform: translate(-60px, 150px);
+}
+
+.content .text-box h3{
+  margin-bottom: 10px;
+}
+
+.media-icons{
+  margin-top: 100px;
+}
+
+.media-icons a{
+  color: #fff;
+  font-size: 2em;
+  margin: 60px;
+}
+
+/**About us**/
+
+.section-title{
+  margin-top: 80px;
+}
+
+.info-title{
+  margin-bottom: 10px;
+}
+
+.info{
+ width: 700px;
+  margin-left: 50px;
+}
+
+.media-info{
+  width: 400px;
+  margin-left: 50px;
+}
+
+.media-info li a{
+  font-family: "Kalam", sans-serif;
+  font-size: 1.4em;
+  color: #fff;
+}
+.media-info li:not(:last-child){
+  margin-bottom: 50px;
+}
+.media-info li:nth-child(1), .media-info li:nth-child(4){
+  padding-left: 60px;
+}
+
+.contact{
+  margin-bottom: 100px;
 }
 
