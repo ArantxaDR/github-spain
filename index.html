@@ -13,9 +13,9 @@
     <!-- HEADER -->
     <header>
       <nav>
-        <a href="index.html"><img src="./images/Logo.png" alt="Github España Logo">Github España</a>
+        <a href="https://www.meetup.com/comunidad-github-spain/" aria-label="Github España"><img src="./images/Logo.png" alt="Github España Logo"></a>
         <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <i class="fa fa-times" id="close-icon" onclick="hideMenu()"></i>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#wedo">Qué hacemos</a></li>
@@ -23,7 +23,7 @@
             <li><a href="#events">Eventos</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <i class="fa fa-bars" id="menu-icon" onclick="showMenu()"></i>
       </nav>
       <section class="text-box">
         <h1>Ven a conocer nuestra comunidad</h1>
@@ -125,5 +125,17 @@
       </div>
       <p>Made with love by Arantxa</p>
     </footer>
+
+
+
+    <script>
+      var navLinks=document.querySelector("#navLinks");
+      function showMenu(){
+        navLinks.style.right="0";
+      }
+      function hideMenu(){
+        navLinks.style.right="-200px";
+      }
+    </script>
   </body>
 </html>
