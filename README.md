@@ -1,2 +1,2 @@
 # github-spain
-First try to create a web community
+Community web page in plain HTML and CSS
